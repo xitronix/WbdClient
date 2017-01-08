@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="basic.ControllerRealizationCourse">
-   <left>
-      <VBox maxHeight="1.7976931348623157E308" maxWidth="250.0" prefHeight="304.0" prefWidth="118.0" style="-fx-background-color: gray;" BorderPane.alignment="TOP_CENTER">
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="basic.ControllerPlanRealizationCourse">
+   <right>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="341.0" prefWidth="250.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
          <children>
             <HBox maxHeight="-Infinity" maxWidth="-Infinity" minWidth="250.0" prefHeight="300.0" prefWidth="300.0">
                <children>
@@ -27,7 +28,7 @@
                   </VBox>
                   <VBox maxHeight="150.0" maxWidth="180.0" minHeight="-Infinity" minWidth="180.0" prefHeight="150.0" prefWidth="180.0" spacing="12.0">
                      <children>
-                        <ComboBox prefWidth="200.0" />
+                        <ComboBox fx:id="kursComboBox" prefWidth="200.0" />
                         <TextField />
                         <TextField />
                         <TextField />
@@ -46,36 +47,15 @@
                   <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
                </VBox.margin>
             </Button>
-            <Label alignment="TOP_LEFT" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="250.0" text="Id realizacji kursu: " textAlignment="JUSTIFY">
-               <font>
-                  <Font name="Calibri Italic" size="18.0" />
-               </font>
-               <VBox.margin>
-                  <Insets top="60.0" />
-               </VBox.margin>
-               <padding>
-                  <Insets left="10.0" />
-               </padding>
-            </Label>
-            <ComboBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="230.0">
-               <VBox.margin>
-                  <Insets bottom="5.0" left="10.0" right="10.0" />
-               </VBox.margin>
-            </ComboBox>
-            <Button alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Dodac realizację zajęć">
-               <VBox.margin>
-                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
-               </VBox.margin>
-            </Button>
          </children>
       </VBox>
-   </left>
+   </right>
    <center>
-      <TableView maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="257.0" prefWidth="500.0" BorderPane.alignment="CENTER">
-         <columns>
-            <TableColumn prefWidth="75.0" text="C1" />
-            <TableColumn prefWidth="75.0" text="C2" />
-         </columns>
+      <TableView prefHeight="341.0" prefWidth="453.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
       </TableView>
    </center>
 </BorderPane>
