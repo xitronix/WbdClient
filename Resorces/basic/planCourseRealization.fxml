@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="basic.ControllerPlanRealizationCourse">
+   <center>
+      <TableView fx:id="classes" prefHeight="341.0" prefWidth="453.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn prefWidth="36.0" text="ID" />
+          <TableColumn prefWidth="144.0" text="Temat" />
+            <TableColumn prefWidth="76.0" text="Pojemnosc" />
+            <TableColumn prefWidth="76.0" text="Czas trwania" />
+            <TableColumn prefWidth="117.0" text="Typ sali" />
+        </columns>
+      </TableView>
+   </center>
+   <right>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="341.0" prefWidth="230.0" style="-fx-background-color: #7a7776;" BorderPane.alignment="CENTER">
+         <children>
+            <ListView prefHeight="265.0" prefWidth="210.0" style="-fx-background-color: #bfbbbb;" />
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addRealizationClass" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: #3d3d3d;" text="Dodaj realizację do listy" textFill="#f8f8f8">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+               <effect>
+                  <Lighting diffuseConstant="2.0" specularExponent="40.0" surfaceScale="1.16">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="116.16" elevation="128.72" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </right>
+</BorderPane>

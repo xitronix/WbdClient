@@ -2,12 +2,10 @@ package basic;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.JavaFXBuilderFactory;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.IOException;
 import java.sql.SQLException;
 
 public class Menu extends Application {
@@ -27,6 +25,8 @@ public class Menu extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("menu.fxml"));
         primaryStage.setTitle("WBD Client");
         primaryStage.setScene(new Scene(root));
+        primaryStage.setResizable(false);
+        //SwitchController.setStage(primaryStage);
         primaryStage.show();
 
     }
